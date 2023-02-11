@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pokémart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <div class="menu-hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="./images/logo.png" alt="Pokémart">
+                <h1>The Pokémart</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="#about">About us</a>
+                    </li>
+                    <li>
+                        <a href="#products">Our products</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-text">
+                <h1>About us</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore rerum quam dicta quos tempore est totam voluptatum cumque, accusamus ad non nulla distinctio architecto laboriosam corporis soluta! Necessitatibus, non! Eos?</p>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo harum, esse minima cumque eligendi, consequatur, repellat repellendus accusamus quod ea perspiciatis!</p>
+            </div>
+            <img src="./images/store.jpg" alt="Store interior">
+        </div>
+    </section>
+    <section id="products" class="products">
+        <div class="container">
+            <h1>Our products</h1>
+            <div class="products-description">
+                <article class="product">
+                    <div class="image">
+                        <img src="./images/pokeball.png" alt="Pokéball">
+                    </div>
+                    <h2>
+                        Pokéball
+                    </h2>
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fugiat, voluptatibus, non porro repudiandae repellat corporis asperiores quia, vel recusandae nostrum doloribus sequi laborum iure facere cumque corrupti voluptas quae.
+                    </h3>
+                    <button type="submit">Add to cart</button>
+                </article>
+                <article class="product">
+                    <div class="image">
+                        <img src="./images/super_potion.png" alt="Super potion">
+                    </div>
+                    <h2>
+                        Super potion
+                    </h2>
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fugiat, voluptatibus, non porro repudiandae repellat corporis asperiores quia, vel recusandae nostrum doloribus sequi laborum iure facere cumque corrupti voluptas quae.
+                    </h3>
+                    <button type="submit">Add to cart</button>
+                </article>
+                <article class="product">
+                    <div class="image">
+                        <img src="./images/revive.png" alt="Revive">
+                    </div>
+                    <h2>
+                        Revive
+                    </h2>
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fugiat, voluptatibus, non porro repudiandae repellat corporis asperiores quia, vel recusandae nostrum doloribus sequi laborum iure facere cumque corrupti voluptas quae.
+                    </h3>
+                    <button type="submit">Add to cart</button>
+                </article>
+                <article class="product">
+                    <div class="image">
+                        <img src="./images/max_repel.png" alt="Max repel">
+                    </div>
+                    <h2>
+                        Max repel
+                    </h2>
+                    <h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint fugiat, voluptatibus, non porro repudiandae repellat corporis asperiores quia, vel recusandae nostrum doloribus sequi laborum iure facere cumque corrupti voluptas quae.
+                    </h3>
+                    <button type="submit">Add to cart</button>
+                </article>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $(".menu-hamburguer").click(function() {
+                $(".menu").slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>

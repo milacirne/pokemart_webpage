@@ -1,0 +1,346 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(62, 62, 183);
+    color: #fff;
+    padding: 25px 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 110px;
+}
+
+header .logo h1 {
+    margin-left: 16px;
+    font-family: 'Miltonian Tattoo', cursive;
+    font-size: 3em;
+}
+
+header .container ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-left: 35px;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+section h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 8px 0 0 rgb(226, 101, 101);
+    transition: 200ms;
+
+}
+
+.menu-hamburguer {
+    width: 32px;
+    cursor: pointer;
+}
+
+.menu-hamburguer span {
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    display: none;
+    margin-bottom: 4px;
+}
+
+section .container {
+    padding: 80px 0;
+    align-items: stretch;
+}
+
+.about-text {
+    display: block;
+}
+
+.about img {
+    height: 450px;
+}
+
+.about-text {
+    margin-right: 100px;
+    color: rgb(62, 62, 183);
+}
+
+.about-text p {
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.products {
+    background-color: rgb(62, 62, 183);
+    color: #fff;
+}
+
+.products .container {
+    display: block;
+}
+
+.products-description {
+    display: grid;
+    grid-template-columns: repeat(4, 22.75%);
+    column-gap: 3%;
+}
+
+.products-description img {
+    height: 100px;
+}
+
+h2,
+h3 {
+    font-weight: lighter;
+}
+
+h2 {
+    margin: 16px 0;
+}
+
+h3 {
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+.image {
+    background-color: #fff;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid rgba(0, 0, 0, 0.6);
+}
+
+button {
+    padding: 8px;
+    background-color: #fff;
+    color: rgb(62, 62, 183);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(173, 173, 231);
+    transition: 300ms;
+}
+
+/******************************** MOBILE ************************************************/
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+        display: block;
+    }
+
+    header {
+        padding: 15px 0;
+    }
+
+    header .logo img {
+        height: 70px;
+    }
+
+    header .logo h1 {
+        font-size: 1.5em;
+        margin-left: 8px;
+    }
+
+    .menu {
+        margin-top: 30px;
+        display: none;
+    }
+
+    header .container ul {
+        display: block;
+    }
+
+    header nav li {
+        font-size: 1em;
+        margin-left: 0;
+        margin-bottom: 8px;
+        text-transform: none;
+    }
+
+    .menu-hamburguer {
+        margin-right: 25px;
+    }
+    
+    .menu-hamburguer span {
+        display: block;
+    }
+
+    nav ul li a:hover {
+        box-shadow: 0 2px 0 0 rgb(226, 101, 101);
+        transition: 200ms;
+    }
+
+    section .container {
+        padding: 50px 0;
+    }
+
+    section h1 {
+        font-size: 1.2em;
+        margin-bottom: 35px;
+    }
+
+    .about .about-text {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
+
+    .about img {
+        height: 250px;
+        width: 100%;
+    }
+
+    .products-description {
+        display: block;
+        grid-template-columns: repeat(4, 22.75%);
+        row-gap: 3%;
+    }
+
+    .products-description h2 {
+        font-size: 1.2em;
+    }
+
+    .products-description h3 {
+        font-size: 1em;
+    }
+    
+    .products-description .product {
+        margin-bottom: 40px;
+    }
+}
+
+/******************************** TABLET ************************************************/
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+        display: block;
+    }
+
+    header .container ul {
+        display: block;
+    }
+
+    header nav li {
+        font-size: 1.5em;
+        margin-left: 0;
+        margin-bottom: 8px;
+        text-transform: none;
+    }
+
+    .menu {
+        margin-top: 60px;
+        display: none;
+    }
+
+    .menu-hamburguer {
+        width: 40px;
+        cursor: pointer;
+        margin-right: 50px;
+    }
+    
+    .menu-hamburguer span {
+        display: block;
+    }
+
+    nav ul li a:hover {
+        box-shadow: 0 2px 0 0 rgb(226, 101, 101);
+        transition: 200ms;
+    }
+
+    section .container {
+        padding: 50px 0;
+    }
+
+    section h1 {
+        margin-bottom: 35px;
+    }
+
+    .about .about-text {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .about img {
+        width: 100%;
+    }
+
+    .products-description {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+        row-gap: 6%;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1245px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header .logo h1 {
+        font-size: 2.6em;
+    }
+
+    nav ul li {
+        margin-left: 35px;
+        font-size: 1.8em;
+    }
+
+    section h1 {
+        font-size: 1.3em;
+        margin-bottom: 35px;
+    }
+
+    .about-text {
+        margin-right: 70px;
+    }
+
+    .about-text p {
+        font-size: 1.2em;
+    }
+}
